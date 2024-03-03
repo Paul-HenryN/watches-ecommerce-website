@@ -5,15 +5,19 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300",
+  "bg-primary text-white inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300",
   {
     variants: {
       variant: {
-        default: "bg-primary text-white py-2 px-8",
-        primary: "bg-primary text-white font-bold",
-        ghost:
-          "hover:bg-neutral-100 dark:hover:bg-slate-800 dark:hover:text-slate-50",
-        link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
+        default: "flex py-2 px-8 rounded-full space-x-2",
+        search: "py-2 px-5 rounded-r-md",
+        tapInactive: "bg-neutral-50 text-black p-2 rounded-full",
+        tapActive: "p-2 rounded-full",
+        action: "flex py-2 px-28 rounded-full space-x-3",
+        social: "text-black bg-transparent p-2 rounded-full hover:text-white hover:bg-primary",
+        ghost: "bg-transparent text-black p-2 rounded-full hover:bg-neutral-50",
+        icon: "bg-white hover:bg-neutral-50 border border-neutral-100 text-black p-2 rounded-full",
+        iconInactive: "bg-neutral-50 text-neutral-300 p-2 rounded-full"
       },
     },
     defaultVariants: {
