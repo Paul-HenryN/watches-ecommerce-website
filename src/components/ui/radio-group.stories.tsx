@@ -13,15 +13,15 @@ export const Default: Story = {
     <RadioGroup defaultValue="option2">
       <div className="flex items-center space-x-2">
         <RadioGroupItem value="option1" id="o1" />
-        <label htmlFor="r1">Option 1</label>
+        <label htmlFor="o1">Option 1</label>
       </div>
       <div className="flex items-center space-x-2">
         <RadioGroupItem value="option2" id="o2" />
-        <label htmlFor="r2">Option 2</label>
+        <label htmlFor="o2">Option 2</label>
       </div>
       <div className="flex items-center space-x-2">
         <RadioGroupItem value="option3" id="o3" />
-        <label htmlFor="r3">Option 3</label>
+        <label htmlFor="o3">Option 3</label>
       </div>
     </RadioGroup>
   ),
